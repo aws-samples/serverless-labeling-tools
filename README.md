@@ -106,7 +106,7 @@ cdk destroy
 
 # Third party License notification
 
-N.B.: Although this repository is released under the MIT-0 license, the sample l;abeling tool used in this case (Doccano)
+N.B.: Although this repository is released under the MIT-0 license, the sample labeling tool used in this case (Doccano)
 use the third party projects psycopg and psycopg2. The psycopg and psycopg2 project's licensing includes the LGPL license.
 
 Please note that this AWS Sample has selected Doccano randomly from the available set of open source labeling tools. You should be able to use any other labeling tool according to your use case, and the corresponding license may be different.
