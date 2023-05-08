@@ -1,0 +1,14 @@
+{
+  "name": "db-initializer",
+  "version": "1.0.0",
+  "description": "Initializes the database for the labeling tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amazon Web Services",
+  "license": "MIT-0",
+  "dependencies": {
+    "pg": "^8.10.0"
+  }
+}
