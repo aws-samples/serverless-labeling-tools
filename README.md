@@ -16,7 +16,7 @@ This AWS Sample uses a completely serverless architecture using AWS services suc
 
 - An AWS account and permissions to deploy the resources in the CDK.
 - An Ubuntu 20+ machine to prepare and deploy the CDK.
-- A VPC and atlest 2 public and 2 private subnets inside it.
+- A VPC and atlest 2 public, 2 private and 2 isolated subnets inside it.
 
 # Setup
 
@@ -52,25 +52,25 @@ This AWS Sample uses a completely serverless architecture using AWS services suc
 
 - Clone or copy this AWS Sample into the `~` folder.
   ```
-  git clone <URL From GitHub>
+  git clone https://github.com/aws-samples/serverless-labeling-tools
   ```
 - Install dependencies.
 
-```
-source ~/venv/bin/activate
+  ```
+  source ~/venv/bin/activate
 
-cd ~/serverless-labeling-tools/lambda/db-initializer$
-npm install
+  cd ~/serverless-labeling-tools/lambda/db-initializer$
+  npm install
 
-cdk ~/serverless-labeling-tools/cdk
-npm install
-```
+  cdk ~/serverless-labeling-tools/cdk
+  npm install
+  ```
 
 - Configure the CDK.
 
   - Setup NAT Gateway for private subnets.
-  - Create a route table for the private subnets.
-  - Create 2 private subnets using the above route table.
+  - Create a route table for the private subnets, and another for the isolated subnets.
+  - Create 2 private subnets and 2 isolated subnets using the above route tables.
 
   - Update `cdk/bin/cdk.js` for account and region
   - Update `cdk/cdk.json` for the following.
