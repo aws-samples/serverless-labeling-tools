@@ -79,10 +79,10 @@ This AWS Sample uses a completely serverless architecture using AWS services suc
     - PRIVATE_SUBNET_IDS - IDs of the private subnets to deploy to. Ensure to have NAT access for these private subnets.
     - ISOLATED_SUBNET_IDS - IDs of the isolated subnets to deploy the DB to.
     - DB_SIZE - Storage size of the database cluster.
-    - DB_NAME - Name of the initial database to create in the cluster.
-    - DB_USER_NAME - Name of the db user. The constraints depends on the labeling tool used.
+    - DB_NAME - Name of the initial database to create in the cluster. (e.g labelingdb)
+    - DB_USER_NAME - Name of the db user. The constraints depends on the labeling tool used. (e.g. postgres)
     - CERTIFICATE_ARN - ARN of a certitficate to enable SSL for the ALB. Use null if a certificate is not to be used.
-  - Update admin username and password in `start.sh` in the docker folder.
+  - Update admin username and password in `docker/start.sh` in the docker folder.
 
 - Deploy the CDK project.
 
@@ -93,7 +93,7 @@ cdk deploy
 
 # Testing
 
-Once the deployment finishes, copy the URL printed out by the CDK, and open it in a browser to start using the labeling tool.
+Once the deployment finishes, copy the URL printed out by the CDK, and open it in a browser to start using the labeling tool. Use the admin username and password as specified in the `docker/start.sh` file to login initially.
 
 # Tearing down
 
