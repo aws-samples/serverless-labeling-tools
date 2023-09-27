@@ -1,5 +1,5 @@
 {
-  "name": "db-initializer",
+  "name": "@aws-samples/db-initializer",
   "version": "1.0.0",
   "description": "Initializes the database for the labeling tool.",
   "main": "index.js",
